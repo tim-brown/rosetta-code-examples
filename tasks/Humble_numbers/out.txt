@@ -1,0 +1,30 @@
+#(1 2 3 4 5 6 7 8 9 10 12 14 15 16 18 20 21 24 25 27 28 30 32 35 36 40 42 45 48 49 50 54 56 60 63 64 70 72 75 80 81 84 90 96 98 100 105 108 112 120)
+9 humble numbers with 1 digits
+36 humble numbers with 2 digits
+95 humble numbers with 3 digits
+197 humble numbers with 4 digits
+356 humble numbers with 5 digits
+579 humble numbers with 6 digits
+882 humble numbers with 7 digits
+1272 humble numbers with 8 digits
+1767 humble numbers with 9 digits
+2381 humble numbers with 10 digits
+...
+17323 humble numbers with 20 digits
+...
+56618 humble numbers with 30 digits
+...
+132054 humble numbers with 40 digits
+...
+255415 humble numbers with 50 digits
+...
+438492 humble numbers with 60 digits
+...
+693065 humble numbers with 70 digits
+...
+1030928 humble numbers with 80 digits
+...
+1463862 humble numbers with 90 digits
+...
+2003661 humble numbers with 100 digits
+cpu time: 234970 real time: 235489 gc time: 189187
