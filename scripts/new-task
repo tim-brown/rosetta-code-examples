@@ -1,0 +1,32 @@
+#!/bin/bash
+
+if (( ! $# ))
+then
+	echo "$0 <rc-wiki-task-name-from-url>" >&2
+	exit 1
+fi
+
+mkdir -p tasks/$1
+
+cat > tasks/$1/README.md <<EOS
+# $1
+
+This is the Racket implementation of the: [$1](https://rosettacode.org/wiki/$1) task.
+EOS
+
+racketname=$(tr "[:upper:]_" "[:lower:]-" <<<$1)
+
+cat > tasks/$1/$racketname.rkt <<EOS
+#lang racket/base
+
+(module+ test (require rackunit))
+
+(define ($racketname . args)
+  (void))
+
+(module+ main
+  ($racketname))
+
+(module+ test
+  ($racketname))
+EOS
