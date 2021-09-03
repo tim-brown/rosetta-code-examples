@@ -7,6 +7,8 @@ cat <<EOS
 
 {{trans|xxx}}
 
+$(cat tasks/$task/README.md)
+
 <lang racket>$(cat tasks/$task/$task.rkt)</lang>
 
 {{out}}
