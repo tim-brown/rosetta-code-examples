@@ -1,7 +1,14 @@
 #!/bin/bash
 
-echo -n "task name:"
-read task_name
+if [[ $1 = "" ]]
+then
+    echo -n "task name:"
+    read task_name
+else
+    task_name=$1
+fi
+
+echo "Task is: ${task_name}"
 
 echo -n "wikipedia url:"
 read wikipedia_url

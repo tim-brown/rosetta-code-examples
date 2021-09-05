@@ -1,9 +1,9 @@
-#!/usr/bin/bash
+#!/bin/bash
 
-task=$1
+task=$(basename $1)
 
 cat <<EOS
-={{header|Racket}}=
+=={{header|Racket}}==
 
 {{trans|xxx}}
 
@@ -15,5 +15,5 @@ $(cat tasks/$task/README.md)
 EOS
 cat <<EOS
 
-<pre>$(racket tasks/$task/$task.rkt)</pre>
+<pre>$(cd tasks/$task; racket $task.rkt)</pre>
 EOS
