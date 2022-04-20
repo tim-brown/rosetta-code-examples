@@ -8,6 +8,7 @@ else
     task_name=$1
 fi
 
+task_name=$(sed 's/[^/a-zA-Z0-9_]/-/g' <<<$task_name)
 echo "Task is: ${task_name}"
 
 echo -n "wikipedia url:"
